@@ -1,0 +1,18 @@
+.list-group {
+    box-shadow: 0 16px 30px -10px #4660bb33;
+    background-color: var(--clr-white-lm--);
+    border-radius: 15px;
+    padding: 24px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-height: calc(100vh - 325px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media (width <= 650px) {
+    .list-group {
+        padding: 18px;
+    }
+}

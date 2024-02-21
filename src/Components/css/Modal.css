@@ -1,0 +1,119 @@
+.user-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 100dvh;
+    padding: 4.8rem 1.2rem;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #00000080;
+}
+
+.user-modal {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: fit-content;
+    height: -moz-fit-content;
+    padding: 48px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--clr-white-lm--);
+    box-shadow: 0 16px 30px -10px #4660bb33;
+    cursor: auto;
+}
+
+.user-modal {
+    display: flex;
+    gap: 36px;
+}
+
+.user-modal-image img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-modal-main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.user-modal-header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-modal-header,
+.user-modal-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-moadal-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.user-moadal-links {
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.user-moadal-links img {
+    height: 18px;
+}
+.modal-close-icon {
+    position: absolute;
+    top: 10px;
+    right: 24px;
+}
+
+.modal-close-icon h1 {
+    cursor: pointer;
+    color: #e91717;
+}
+
+@media (width <= 550px) {
+    .user-modal {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .user-modal-image {
+        align-self: center;
+    }
+}
+
+@media (width <= 420px) {
+    .user-modal {
+        padding: 32px;
+    }
+    .user-modal-header-container > p {
+        text-align: center;
+    }
+    .user-modal-header {
+        flex-direction: column;
+        gap: 6px;
+    }
+    .user-modal-header > div > * {
+        text-align: center;
+    }
+    .user-modal-meta {
+        flex-wrap: wrap;
+    }
+    .user-modal-meta > div {
+        min-width: 72px;
+        gap: 16px;
+    }
+}
